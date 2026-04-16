@@ -1,4 +1,12 @@
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:4000/api";
+const isLocalHost =
+  typeof window !== "undefined" &&
+  ["localhost", "127.0.0.1"].includes(window.location.hostname);
+
+const API_BASE =
+  import.meta.env.VITE_API_BASE ||
+  (isLocalHost
+    ? "http://localhost:4000/api"
+    : "https://associate-production.up.railway.app/api");
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_BASE}${path}`, {
