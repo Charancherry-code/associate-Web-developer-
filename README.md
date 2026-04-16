@@ -7,6 +7,12 @@ This project implements the requested stack with:
 - CRUD APIs for tasks and task comments
 - Automated API tests using Jest + Supertest
 
+## Live Deployment
+
+- Frontend (Vercel): https://associate-web-developer.vercel.app/
+- Backend (Railway): https://associate-production.up.railway.app
+- Health Check: https://associate-production.up.railway.app/api/health
+
 ## Project Structure
 
 - `frontend/` - Vite + React UI
@@ -59,18 +65,11 @@ npm test
 - `PUT /api/tasks/:taskId/comments/:commentId`
 - `DELETE /api/tasks/:taskId/comments/:commentId`
 
-## Submission Tips
+## Final Submission
 
-For the email to Better Marketing:
-
-- Subject: `Associate Frontend Developer (Framer-Only) - Charan - Assessment`
-- Include deployed website URL
-- Include a short walkthrough video showing:
-  - Responsive behavior on mobile/tablet/desktop/ultrawide
-  - Semantic headings and section structure
-  - SEO metadata and image alt tags
-  - Clean hierarchy and naming
-  - API CRUD flow + test evidence
+- Candidate: Charan Banoth
+- Frontend URL: https://associate-web-developer.vercel.app/
+- Backend URL: https://associate-production.up.railway.app
 
 ## Notes
 
